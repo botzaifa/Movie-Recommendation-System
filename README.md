@@ -1,8 +1,6 @@
 
 # Movie Recommendation System
 
-Welcome to the Movie Recommendation System project by [@botzaifa](https://github.com/botzaifa)!
-
 This project focuses on building a movie recommendation system using a content-based approach, creating a user-friendly front-end web application to showcase the recommendations, and deploying the application using Docker and Google Kubernetes Engine.
 
 ## Project Summary
