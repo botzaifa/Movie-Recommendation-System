@@ -87,6 +87,5 @@ Contributions to this project are welcome! If you find any bugs or have ideas fo
 
 This project is licensed under the [MIT License](LICENSE).
 
----
-Created by [@botzaifa](https://github.com/botzaifa)
-```
+# Created by: 
+Me (Huzaifa Khan) here's my profile: [@botzaifa](https://github.com/botzaifa)
