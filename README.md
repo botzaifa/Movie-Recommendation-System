@@ -1,7 +1,8 @@
-
 # Movie Recommendation System
 
 This project focuses on building a movie recommendation system using a content-based approach, creating a user-friendly front-end web application to showcase the recommendations, and deploying the application using Docker and Google Kubernetes Engine.
+
+![App Screenshot](MRS_Image.png)
 
 ## Project Summary
 
@@ -16,35 +17,28 @@ The project is divided into several key steps:
 3. **Front-End Web App using Streamlit:**
    - To interact with our recommendation system, we design a front-end web application using Streamlit. Users can input their preferences, and the app will display relevant movie recommendations.
 
-4. **Containerization with Docker:**
-   - Our recommendation system is containerized using Docker. This ensures consistent behavior across different environments and simplifies deployment.
-
-5. **Deployment on Google Kubernetes Engine:**
-   - The containerized application is deployed on Google Kubernetes Engine (GKE). This allows us to scale our application easily and manage it effectively.
-
 ## Getting Started
 
 Follow these steps to set up and run the Movie Recommendation System on your local machine:
 
 1. Clone this repository:
-   ```
+   ```bash
    git clone https://github.com/botzaifa/Movie-Recommendation-System.git
    cd Movie-Recommendation-System
    ```
 
-2. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+2. Create a 'dataset' folder in the root directory and place your dataset files there.
 
 3. Run the data extraction script:
-   ```
-   python scrape_data.py
+   ```bash
+   python Data_Extraction.ipynb
    ```
 
-4. Build and run the Streamlit app locally:
-   ```
-   streamlit run app.py
+4. Explore the dataset and perform feature engineering using EDA-Feature_Engineering.ipynb.
+
+5. Build and run the Streamlit app locally:
+   ```bash
+   streamlit run frontend.py
    ```
 
 For deployment instructions using Docker and Google Kubernetes Engine, please refer to the corresponding sections below.
@@ -55,11 +49,11 @@ To containerize the application using Docker:
 
 1. Install Docker on your machine.
 2. Build the Docker image:
-   ```
+   ```bash
    docker build -t movie-recommendation-app .
    ```
 3. Run the Docker container:
-   ```
+   ```bash
    docker run -p 8080:8080 movie-recommendation-app
    ```
 
@@ -69,11 +63,11 @@ To deploy the containerized app on Google Kubernetes Engine:
 
 1. Set up your GKE cluster.
 2. Deploy the Docker image to GKE:
-   ```
+   ```bash
    kubectl create deployment movie-recommendation-app --image=movie-recommendation-app
    ```
 3. Expose the deployment as a service:
-   ```
+   ```bash
    kubectl expose deployment movie-recommendation-app --type=LoadBalancer --port=80 --target-port=8080
    ```
 
@@ -83,7 +77,10 @@ Contributions to this project are welcome! If you find any bugs or have ideas fo
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
+
 
 # Created by: 
 Me (Huzaifa Khan) here's my profile: [@botzaifa](https://github.com/botzaifa)
+
+
